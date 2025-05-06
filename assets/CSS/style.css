@@ -1,16 +1,16 @@
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: red;
-    color: white;
-        text-align: center;
-    }
+Asterisk wildcard selector to override default styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-#hero{
-    background: url(../images/darts-worlds-hero.jpg) no-repeat center;
-    height: 600px;
-    width:100%;
-    color:aqua
+header {
+    background-color: aqua;
+}
+main {
+    background-color: rebeccapurple;
+}
+footer {
+    background-color: lightgreen;
 }

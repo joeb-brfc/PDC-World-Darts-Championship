@@ -73,3 +73,29 @@ main {
 footer {
     background-color: lightgreen;
 }
+
+/*Media query: tablets and larger*/
+@media screen and (min-width:768px) {
+    /*Header*/
+    nav{
+        display:block;
+        position:relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+    #menu {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 3px;
+        justify-content: space-evenly;
+        
+    }
+    a{
+        max-width:50%
+    }
+    .nav-toggle-label{
+        display:none
+    }
+}

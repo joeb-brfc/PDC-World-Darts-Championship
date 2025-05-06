@@ -28,6 +28,17 @@ h1{
     text-transform: uppercase ;
     letter-spacing: 1px;
 }
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-size:110%;
+}
+.active{
+    border-bottom: 1px solid;
+}
 main {
     background-color: rebeccapurple;
     /*Make element take up all available space to push footer down*/

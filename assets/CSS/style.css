@@ -39,6 +39,18 @@ h1{
 .active{
     border-bottom: 1px solid;
 }
+/*Nav bar style with dropdown toggle*/
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    position: fixed;
+    box-shadow: 0 3px 3px #3b3b3b;
+    display:none;
+
+}
 main {
     background-color: rebeccapurple;
     /*Make element take up all available space to push footer down*/

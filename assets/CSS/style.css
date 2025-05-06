@@ -19,6 +19,9 @@ header {
     z-index: 99;
     width:100%;
     box-shadow: 0 3px 3px #3b3b3b;
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a {
@@ -46,15 +49,26 @@ nav {
     width: 100%;
     left: 0;
     padding: 0 1rem;
-    position: fixed;
     box-shadow: 0 3px 3px #3b3b3b;
     display:none;
+    top:100%;
 
+}
+/*Nav toggle*/
+#nav-toggle:checked~nav {
+    display: block;
+}
+#nav-toggle {
+    display: none;
+}
+.nav-toggle-label {
+font-size: 2rem;
 }
 main {
     background-color: rebeccapurple;
     /*Make element take up all available space to push footer down*/
     flex: 1 0 auto;
+    margin-top: 47px;
 }
 footer {
     background-color: lightgreen;

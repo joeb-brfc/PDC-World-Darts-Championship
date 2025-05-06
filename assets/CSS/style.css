@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     /*General styles*/
-    color: #3b3b3b;
+    
 }
 header {
     background-color: aqua;

@@ -5,4 +5,12 @@
     width: 100%;
     background-color: red;
     color: white;
-    text-align: center;
+        text-align: center;
+    }
+
+#hero{
+    background: url(../images/darts-worlds-hero.jpg) no-repeat center;
+    height: 600px;
+    width:100%;
+    color:aqua
+}

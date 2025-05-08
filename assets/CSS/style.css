@@ -74,40 +74,164 @@ footer {
     background-color: lightgreen;
 }
 
-/*Media query: tablets and larger*/
-@media screen and (min-width:768px) {
-    /*Header*/
-    nav{
-        display:block;
-        position:relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 1rem;
-        font-size:200%;
-        
-    }
-    #menu {
-        display:flex;
+/* Asterisk wildcard selector to override default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling */
+header {
+    background-color: #ffffff;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 3px 3px #3b3b3b;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header a {
+    text-decoration: none;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Menu styling */
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-size: 110%;
+}
+
+.active {
+    border-bottom: 1px solid;
+}
+
+/* Navigation styling */
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 3px 3px #3b3b3b;
+    display: none;
+    top: 100%;
+}
+
+/* Nav toggle */
+#nav-toggle:checked ~ nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+/* Main content */
+main {
+    background-color: rebeccapurple;
+    flex: 1 0 auto;
+    padding-top: 65px; /* Default padding to prevent header overlap */
+}
+
+/* Footer */
+footer {
+    background-color: lightgreen;
+}
+
+/* Media Queries */
+
+/* Small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    header {
         flex-direction: column;
         align-items: flex-start;
-        padding-bottom: 3px;
-        justify-content: space-evenly;
-        
     }
-    a{
-        max-width:60%
+
+    #menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        font-size: 100%;
     }
-    .nav-toggle-label{
-        display:none
+
+    .nav-toggle-label {
+        display: block;
+        align-self: flex-end;
+        margin: 0.5rem 0;
     }
-    #logo {
-        font-size: 250%;
-        line-height: 75px;
-        margin: 0 0.5rem
+
+    h1 {
+        font-size: 1.5rem;
     }
-    /*Main Content*/
+
     main {
-        /*Make element take up all available space to accommodate larger header*/
-        margin-top: 191px;
+        padding-top: 100px;
+    }
+}
+
+/* Medium devices (tablets, 576px to 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #menu {
+        font-size: 105%;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .nav-toggle-label {
+        font-size: 2rem;
+    }
+
+    main {
+        padding-top: 80px;
+    }
+}
+
+/* Large devices (768px and up) */
+@media (min-width: 768px) {
+    nav {
+        display: block !important;
+        position: static;
+        box-shadow: none;
+    }
+
+    #menu {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #nav-toggle {
+        display: none;
+    }
+
+    main {
+        padding-top: 65px;
     }
 }

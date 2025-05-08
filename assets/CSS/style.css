@@ -120,7 +120,7 @@ h1 {
 }
 
 .active {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 /* Navigation styling */
@@ -156,10 +156,18 @@ main {
 }
 
 /* Footer */
-footer {
-    background-color: lightgreen;
+#external-links{
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
 }
-
+#external-links i{
+    font-size:150%;
+    padding: 5%;
+    color: #3b3b3b;
+}
 /* Media Queries */
 
 /* Small devices (phones, less than 576px) */
@@ -233,5 +241,11 @@ footer {
 
     main {
         padding-top: 65px;
+    }
+    /*Large devices (992px and up)*/
+    @media screen and (min-width: 992px) {
+        #menu a:hover{
+            background-color: #f0f0f0;
+        }
     }
 }

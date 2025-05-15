@@ -11,69 +11,35 @@ body {
     flex-direction: column;
     background-color: #f5f5f5;
     color:1c1c1c; /* Dark text color replicating darker components on dartboard */
-    
-
-    
-}
-header {
-    background-color: #d32f2f; /* Red outer/bull scoring zone color */
-    padding: 0 1rem;
-    position: fixed;
-    z-index: 99;
-    width:100%;
-    box-shadow: 0 3px 3px #3b3b3b;
-    display:flex;
-    justify-content: space-between;
-    align-items: baseline;
+  
 }
 
-header a {
-    text-decoration: none;
-}
-h1{
-    text-transform: uppercase ;
-    letter-spacing: 1px;
-}
+  .custom-navbar {
+    background-color: #d32f2f;
+  }
 
-#menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    font-size:110%;
-}
-.active{
-    border-bottom: 1px solid;
-}
+  .custom-navbar .nav-link,
+  .custom-navbar .navbar-brand {
+    color: #fff;
+  }
+
+  .custom-navbar .nav-link:hover {
+    color: #ffcdd2; /* Optional lighter red on hover */
+  }
+
 /*Nav bar style with dropdown toggle*/
-nav {
-    position: absolute;
-    background-color: #ffffff;
-    width: 100%;
-    left: 0;
-    padding: 0 1rem;
-    box-shadow: 0 3px 3px #3b3b3b;
-    display:none;
-    top:100%;
 
-}
-/*Nav toggle*/
-#nav-toggle:checked~nav {
-    display: block;
-}
-#nav-toggle {
-    display: none;
-}
-.nav-toggle-label {
-font-size: 2rem;
-}
 main {
     /*Make element take up all available space to push footer down*/
     flex: 1 0 auto;
     margin-top: 47px;
 }
 
-
+ .card-body ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
 
 footer {
     background-color: #388e3c; /* Green outer/bull scoring zone color */

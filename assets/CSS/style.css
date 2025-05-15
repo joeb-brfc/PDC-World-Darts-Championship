@@ -1,9 +1,4 @@
-Asterisk wildcard selector to override default styles
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 /*General styles*/
 body {
     min-height: 100vh;
